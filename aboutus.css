@@ -1,0 +1,176 @@
+body {
+    background: black;
+}
+
+#mainNavbar {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px
+}
+
+#mainNavbar .nav-link:hover {
+    color: red;
+}
+
+nav ul {
+    padding-top: 20px;
+    float: center;
+    list-style: none;
+    position: center;
+    background-color: black;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 110px;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul ul {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+}
+
+.show,
+.icon,
+input {
+    display: none;
+}
+
+@media all and (max-width: 968px) {
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul ul li {
+        position: static;
+    }
+}
+
+nav ul ul a {
+    padding-left: 5px;
+}
+
+.show {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.show:hover {
+    color: red;
+}
+
+.icon {
+    display: blocks;
+    color: white;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 60px;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.flexbox-container1 {
+    display: flex;
+    margin-left: 650px;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+.flexbox-container2 {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.flexbox-container3 {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 10px;
+}
